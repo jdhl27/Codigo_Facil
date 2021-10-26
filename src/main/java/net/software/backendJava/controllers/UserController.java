@@ -20,13 +20,13 @@ public class UserController {
   @Autowired
   UserServiceInterface userService;
 
-  // Consultar información
+  // Consultar Usuario
   @GetMapping
   public String getUser(){
     return "Obtener usuarios";
   }
 
-  // Creando información
+  // Creando Usuario
   @PostMapping
   public UserRest createUser(@RequestBody UserDetailRequestModel userDetails){
     UserRest userToReturn = new UserRest();
